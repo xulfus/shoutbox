@@ -1,10 +1,7 @@
 # shoutbox
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
+A clojure compojure tutorial
+Shamelessly adapted from https://devcenter.heroku.com/articles/clojure-web-application
 
 ## License
 
