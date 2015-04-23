@@ -19,7 +19,7 @@
                         "NOT NULL" "DEFAULT CURRENT_TIMESTAMP"])))
 
 (defn all-shouts []
-  (into [] (sql/query db-uri ["select * from shouts order by id desc"])))
+  (sql/query db-uri ["select * from shouts order by id desc"]))
 
 (defn create [content]
   (sql/insert! db-uri :shouts [:shout] [content]))

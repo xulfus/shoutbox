@@ -31,7 +31,6 @@
                  (display-shouts shouts)))
 
 (defn create-shout [shout]
-  (println "creating shout" shout)
   (when-not (str/blank? shout)
     (db/create shout))
   (resp/redirect "/"))
